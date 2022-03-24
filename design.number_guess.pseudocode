@@ -1,7 +1,6 @@
 GET number_guessed
 IF (number_guessed = answer) THEN
     SHOW "Your guess is right!"
-ENDIF
-IF (number_guessed != answer) THEN
-    SHOW "Your guess is wrong!"
+ELSE
+    SHOW "Your answer is wrong! The correct answer is answer"
 ENDIF

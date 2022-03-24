@@ -4,7 +4,7 @@
 # Created on March 2022
 # This is the math program, comparing the guessed number and answer
 
-import constants
+import random
 
 
 def main():
@@ -14,15 +14,15 @@ def main():
     # input
     number_guess = int(input("Enter the number you guess between 0 - 9: "))
 
-    # process
-    if number_guess == constants.ANSWER:
-        # output
-        print("")
+    # process & output
+    answer_random = random.randint(0,9)
+    print("")
+    if number_guess == answer_random:
         print("Your guess is right!")
-    if number_guess != constants.ANSWER:
-        # output
-        print("")
-        print("Your guess is wrong!")
+    else:
+        print("Your guess is wrong! The answer is {0}.".format(answer_random))
+    
+    print("\nDone.")
 
 
 if __name__ == "__main__":

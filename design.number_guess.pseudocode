@@ -1,4 +1,5 @@
 GET number_guessed
+GET answer_random
 IF (number_guessed = answer_random) THEN
     SHOW "Your guess is right!"
 ELSE
